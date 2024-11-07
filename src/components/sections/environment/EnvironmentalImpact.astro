@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Container from "../../shared/Container.astro";
 import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
@@ -20,9 +21,6 @@ const { className } = Astro.props;
     <Title2>{environmentalImpactSection.title}</Title2>
   </Container>
   <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12 ">
-    <!-- <div
-      class="max-w-md mx-auto flex midmd:w-7/12 lg:w-3/4 flex-col align-self-start text-start"
-    > -->
     <div
       class="max-w-md mr-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col"
     >
@@ -35,36 +33,25 @@ const { className } = Astro.props;
       </Paragraph>
       <ul class="mt-8 space-y-4 text-heading-3">
         {
-          environmentalImpactSection.impactPoints.map((point) => (
+          environmentalImpactSection.impactPoints.map(({title, content}) => (
             <li>
               <Paragraph className="font-normal">
                 <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">
                   &checkmark;
-                </span>{" "}
-                {point}
+                </span>
+                <span class="font-semibold">{title} </span> 
+                {content}
               </Paragraph>
             </li>
           ))
         }
       </ul>
-      <div class="pt-10">
-        <CtaButton>{environmentalImpactSection.button}</CtaButton>
-      </div>
     </div>
     <div
       class="midmd:max-w-none flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto"
     >
-      <!-- <div
-      class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2 flex w-11/12 midmd:w-5/12 lg:w-1/4 midmd:h-[587px]"
-    > -->
-      <!-- <LazyImage
-        src={environmentalImpactSection.visual}
-        alt="environmental impact"
-        height="587"
-        width="388"
-        class="w-full h-full object-cover rounded-2xl"
-      /> -->
-      <LazyImage
+
+      <Image
         src={environmentalImpactSection.visual}
         alt="environmental impact"
         width="700"

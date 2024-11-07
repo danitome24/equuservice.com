@@ -1,19 +1,18 @@
 import img from "./assets/green-hands.png";
 
 export const environmentalImpactSection = {
-  title: "Environmental Impact",
-  subheading1_1: "Choosing [Company Name] for a",
-  subheading1_2: " Greener Tomorrow",
+  title: "Transporte",
+  subheading1_1: "Transporte",
+  subheading1_2: " Equuservice",
   description:
-    "At [Company Name], we are committed to making a positive impact on the environment. By choosing our sustainable energy solutions, you contribute to:",
+    "Ofrecemos transporte especializado y seguro para caballos en Tarragona y alrededores.",
   impactPoints: [
-    "Reducing Carbon Emissions",
-    "Conserving Natural Resources",
-    "Preserving Biodiversity",
-    "Mitigating Climate Change",
-    "Promoting a Cleaner and Healthier Planet",
+    {title: "Nuestros vehículos:", content: "Disponemos de furgón de 2 caballos, remolque oblicuo de 2 caballos (3 ponis) y remolque oblicuo de 3 caballos (4 ponis)"},
+    {title: "Comodidad e Higiene:", content: "Comodidad adsoluta de tu caballo. Nuestro trasporte cuenta con todos los sistemas adaptados para prestarte un servicio de la mejor calidad."},
+    {title: "Cámaras Interiores:",content: "Con nuestras cámaras podremos tener acceso en todo momento al estado real de tu caballo durante el desplazamiento."},
+    {title: "Alimentación:", content: "Tenemos redes para forraje a disposición de nuestros clientes."},
+    {title: "Control:", content: "Disponemos de lector de microchip y termómetro láser para un mayor control de los equinos."}
+
   ],
   visual: img,
-  callToAction: "Join Us in Building a Sustainable Future",
-  button: "Learn More",
 };
