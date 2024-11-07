@@ -1,4 +1,4 @@
-import img from "./assets/green-hands.png";
+import img from "./assets/remolque-equuservice.png";
 
 export const environmentalImpactSection = {
   title: "Transporte",
