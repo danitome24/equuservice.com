@@ -31,13 +31,13 @@ const { className } = Astro.props;
       </Paragraph>
       <ul class="mt-8 space-y-4 text-heading-3">
         {
-          transportSection.impactPoints.map(({title, content}) => (
+          transportSection.impactPoints.map(({ title, content }) => (
             <li>
               <Paragraph className="font-normal">
                 <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">
                   &checkmark;
                 </span>
-                <span class="font-semibold">{title} </span> 
+                <span class="font-semibold">{title} </span>
                 {content}
               </Paragraph>
             </li>
@@ -48,10 +48,9 @@ const { className } = Astro.props;
     <div
       class="midmd:max-w-none flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto"
     >
-
       <Image
         src={transportSection.visual}
-        alt="environmental impact"
+        alt="Remolque servicio de transporte."
         width="700"
         class="w-full h-full object-cover rounded-2xl"
       />
