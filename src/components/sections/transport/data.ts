@@ -1,6 +1,6 @@
 import img from "./assets/remolque-equuservice.png";
 
-export const environmentalImpactSection = {
+export const transportSection = {
   title: "Transporte",
   subheading1_1: "Transporte",
   subheading1_2: " Equuservice",

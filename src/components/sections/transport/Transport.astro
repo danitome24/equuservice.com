@@ -1,13 +1,11 @@
 ---
 import { Image } from "astro:assets";
 import Container from "../../shared/Container.astro";
-import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
-import LazyImage from "../../shared/LazyImage.astro";
 import Paragraph from "../../shared/Paragraph.astro";
 import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
-import { environmentalImpactSection } from "./data.ts";
+import { transportSection } from "./data.ts";
 
 export interface Props {
   className?: string;
@@ -18,22 +16,22 @@ const { className } = Astro.props;
 
 <section id="environment" class=`${className}`>
   <Container>
-    <Title2>{environmentalImpactSection.title}</Title2>
+    <Title2>{transportSection.title}</Title2>
   </Container>
   <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12 ">
     <div
       class="max-w-md mr-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col"
     >
       <SubTitle2>
-        {environmentalImpactSection.subheading1_1}
-        <GradiantText>{environmentalImpactSection.subheading1_2}</GradiantText>
+        {transportSection.subheading1_1}
+        <GradiantText>{transportSection.subheading1_2}</GradiantText>
       </SubTitle2>
       <Paragraph>
-        {environmentalImpactSection.description}
+        {transportSection.description}
       </Paragraph>
       <ul class="mt-8 space-y-4 text-heading-3">
         {
-          environmentalImpactSection.impactPoints.map(({title, content}) => (
+          transportSection.impactPoints.map(({title, content}) => (
             <li>
               <Paragraph className="font-normal">
                 <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">
@@ -52,7 +50,7 @@ const { className } = Astro.props;
     >
 
       <Image
-        src={environmentalImpactSection.visual}
+        src={transportSection.visual}
         alt="environmental impact"
         width="700"
         class="w-full h-full object-cover rounded-2xl"
