@@ -17,11 +17,13 @@ const { className } = Astro.props;
     <Title2>{servicesSectionData.title}</Title2>
   </Container>
   <Container size="wide">
-    <div class="grid grid-col-1 md:grid-cols-3 lg:grid-cols-4 gap-y-2 gap-x-4">
+    <div class="grid grid-cols-2 gap-8 items-center p-8">
       <ServiceCopyTextCard
         className="md:col-span-2 flex flex-col"
         subheading={servicesSectionData.subheading}
       />
+    </div>
+    <div class="grid grid-col-1 md:grid-cols-3 lg:grid-cols-4 gap-y-2 gap-x-4">
       <div class="">
         <ServiceCard
           title={servicesSectionData.services[0].title}
@@ -48,20 +50,6 @@ const { className } = Astro.props;
           title={servicesSectionData.services[3].title}
           description={servicesSectionData.services[3].briefDescription}
           visual={servicesSectionData.services[3].visual}
-        />
-      </div>
-      <div class="">
-        <ServiceCard
-          title={servicesSectionData.services[4].title}
-          description={servicesSectionData.services[4].briefDescription}
-          visual={servicesSectionData.services[4].visual}
-        />
-      </div>
-      <div class="">
-        <ServiceCard
-          title={servicesSectionData.services[5].title}
-          description={servicesSectionData.services[5].briefDescription}
-          visual={servicesSectionData.services[5].visual}
         />
       </div>
     </div>

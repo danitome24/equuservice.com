@@ -1,11 +1,11 @@
-import img1 from "./assets/solar3.png";
-import img2 from "./assets/wind.png";
-// TODO
-import img3 from "./assets/hydro.png";
-import img4 from "./assets/storage.png";
-// TODO
-import img5 from "./assets/smart-grid.png";
-import img6 from "./assets/green.png";
+// import cameraTransport from "./assets/camara-transporte.png";
+// import protectionsTransport from "./assets/protecciones-transporte.png";
+// import ventilationTransport from "./assets/ventilacion-transporte.png";
+// import horseFoodTransport from "./assets/forraje-transporte.png";
+import adviceService from "./assets/asesoramiento-servicio.jpg";
+import trainingService from "./assets/entrenamiento-servicio.png";
+import transportService from "./assets/transporte-servicio.png";
+import eventsService from "./assets/eventos-servicio.png";
 
 export const servicesSectionData = {
   title: "Nuestros servicios",
@@ -16,44 +16,53 @@ export const servicesSectionData = {
       "El mejor transporte de caballos de Tarragona.",
   },
   services: [
-    {
-      title: "Solar Power Solutions",
+    // {
+    //   title: "Cámaras interiores",
+    //   briefDescription:
+    //     "Toda nuestra flota dispone de cámaras interiores para tener controlado en todo momento a tu caballo.",
+    //   visual: cameraTransport,
+    // },
+    // {
+    //   title: "Alimentación",
+    //   briefDescription:
+    //     "Tenemos redes para forraje a disposición de nuestros clientes.",
+    //   visual: horseFoodTransport,
+    // },
+    // {
+    //   title: "Ventilación",
+    //   briefDescription:
+    //     "Tu caballo siempre dispondrá de ventilación y una temperatura agradable.",
+    //   visual: ventilationTransport,
+    // },
+    // {
+    //   title: "Protecciones",
+    //   briefDescription:
+    //     "El cajón va totalmente acolchado para la comodidad del caballo.",
+    //   visual: protectionsTransport,
+    // }
+        {
+      title: "Transporte",
       briefDescription:
-        "Harness the power of the sun with our state-of-the-art solar panels. Generate clean energy for your home or business and reduce your carbon footprint.",
-      visual: img1,
+        "Disponemos de furgón de 2 caballos, remolque oblicuo de 2 caballos (3 ponis) y remolque oblicuo de 3 caballos (4 ponis).",
+      visual: transportService,
     },
     {
-      title: "Wind Energy Harvesting",
+      title: "Entrenamiento",
       briefDescription:
-        "Embrace the power of the wind. Our wind energy solutions provide a sustainable and efficient way to generate electricity, ensuring a greener future.",
-      visual: img2,
+        "Tenemos redes para forraje a disposición de nuestros clientes.",
+      visual: trainingService,
     },
     {
-      title: "Hydropower Systems",
+      title: "Turismo ecuestre y eventos",
       briefDescription:
-        "Flow with nature. Our hydropower systems harness the energy of flowing water, delivering reliable and eco-friendly electricity to your doorstep.",
-      visual: img3,
+        "Tu caballo siempre dispondrá de ventilación y una temperatura agradable.",
+      visual: eventsService,
     },
     {
-      title: "Energy Storage Solutions",
+      title: "Marketing y asesoramiento",
       briefDescription:
-        "Store excess energy efficiently. Our cutting-edge energy storage solutions ensure uninterrupted power supply, even during cloudy days or low-wind periods.",
-      visual: img4,
-    },
-    {
-      title: "Smart Grid Technology",
-      briefDescription:
-        "Navigate the future with our smart grid technology. Optimize energy distribution, monitor consumption, and contribute to a more sustainable and efficient energy ecosystem.",
-      visual: img5,
-    },
-    {
-      title: "Energy-efficient Lighting",
-      briefDescription:
-        "Illuminate your space responsibly. Our energy-efficient lighting solutions provide bright, sustainable, and cost-effective illumination for homes and businesses.",
-      visual: img6,
-    },
+        "El cajón va totalmente acolchado para la comodidad del caballo.",
+      visual: adviceService,
+    }
   ],
-  callToAction:
-    "Discover the Future of Green Energy. Choose Your Sustainable Solution Today!",
-  buttonText: "Explore More",
 };
