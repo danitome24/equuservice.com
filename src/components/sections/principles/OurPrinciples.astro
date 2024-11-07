@@ -3,7 +3,7 @@ import Container from "../../shared/Container.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
-import InvolvementCard from "./components/InvolvementCard.astro";
+import PrincipleCard from "./components/PrincipleCard.astro";
 import { getPrinciples } from "./data.ts";
 
 export interface Props {
@@ -27,7 +27,7 @@ const { className } = Astro.props;
       {
         getPrinciples.initiatives.map((principle) => {
           return (
-            <InvolvementCard
+            <PrincipleCard
               title={principle.title}
               description={principle.description}
               visual={principle.visual}
