@@ -67,18 +67,18 @@ export default {
         //   950: "#092a0b",
         // },
         primary: {
-          50:  "#fff8f2",   // Naranja muy claro, casi blanco
-          100: "#ffedd8",   // Naranja muy suave y pastel
-          200: "#ffdab1",   // Naranja pastel, cálido
-          300: "#ffc180",   // Naranja claro
-          400: "#ffa957",   // Naranja suave
-          500: "#ff9230",   // Naranja equilibrado (ligeramente más claro que el original)
+          50: "#fff8f2", // Naranja muy claro, casi blanco
+          100: "#ffedd8", // Naranja muy suave y pastel
+          200: "#ffdab1", // Naranja pastel, cálido
+          300: "#ffc180", // Naranja claro
+          400: "#ffa957", // Naranja suave
+          500: "#ff9230", // Naranja equilibrado (ligeramente más claro que el original)
           DEFAULT: "#ffa226", // Naranja de Equuservice
-          600: "#e58f23",   // Naranja oscuro
-          700: "#c67a1e",   // Naranja más profundo
-          800: "#a6671a",   // Naranja intenso y oscuro
-          900: "#804e14",   // Naranja muy oscuro, con un tono terroso
-          950: "#4a2a0b"    // Naranja extremadamente oscuro, casi marrón
+          600: "#e58f23", // Naranja oscuro
+          700: "#c67a1e", // Naranja más profundo
+          800: "#a6671a", // Naranja intenso y oscuro
+          900: "#804e14", // Naranja muy oscuro, con un tono terroso
+          950: "#4a2a0b", // Naranja extremadamente oscuro, casi marrón
         },
         secondary: {
           50: "#edfaff",

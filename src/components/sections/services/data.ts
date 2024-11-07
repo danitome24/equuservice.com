@@ -12,8 +12,7 @@ export const servicesSectionData = {
   subheading: {
     text1_1: "Un Transporte - ",
     text1_2: "Diseñado para una total comodidad.",
-    text2:
-      "El mejor transporte de caballos de Tarragona.",
+    text2: "El mejor transporte de caballos de Tarragona.",
   },
   services: [
     // {
@@ -40,7 +39,7 @@ export const servicesSectionData = {
     //     "El cajón va totalmente acolchado para la comodidad del caballo.",
     //   visual: protectionsTransport,
     // }
-        {
+    {
       title: "Transporte",
       briefDescription:
         "Disponemos de furgón de 2 caballos, remolque oblicuo de 2 caballos (3 ponis) y remolque oblicuo de 3 caballos (4 ponis).",
@@ -63,6 +62,6 @@ export const servicesSectionData = {
       briefDescription:
         "El cajón va totalmente acolchado para la comodidad del caballo.",
       visual: adviceService,
-    }
+    },
   ],
 };

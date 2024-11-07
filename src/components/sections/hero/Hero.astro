@@ -15,7 +15,7 @@ const heroSection = {
   subheading1: "Tu pasión nos mueve...",
   subheading2: "",
   subheading3: "",
-  buttonText: "Contáctanos"
+  buttonText: "Contáctanos",
 };
 
 export interface Props {
@@ -45,11 +45,11 @@ const { className = "" } = Astro.props;
           {heroSection.subheading2}<br />
           {heroSection.subheading3}
         </SubTitle>
-        <div class="pt-10">
+        <div class="pt-10 hidden md:block">
           <CtaButton>{heroSection.buttonText}</CtaButton>
         </div>
       </div>
-      <div class="flex relative pt-10 md:p-0">
+      <div class="hidden md:flex relative pt-10 md:p-0">
         <Image
           src={heroImg}
           alt="A picture of a wind turbine."
@@ -60,7 +60,7 @@ const { className = "" } = Astro.props;
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 400"
         >
-          <path d="M0 0l0 400L100 0Z"> </path>
+          <path d="M0 0l0 400L100 0Z"></path>
         </svg>
       </div>
     </div>
