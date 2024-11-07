@@ -1,0 +1,53 @@
+---
+import Container from "../../shared/Container.astro";
+import GradiantText from "../../shared/GradiantText.astro";
+import SubTitle2 from "../../shared/SubTitle2.astro";
+import Title2 from "../../shared/Title2.astro";
+
+export interface Props {
+  className?: string;
+}
+const { className } = Astro.props;
+---
+
+<section id="contacto">
+  <Container
+    className="mx-auto flex flex-col items-center justify-center text-center"
+  >
+    <!-- Título de la sección -->
+    <Title2>Información de Contacto</Title2>
+    <SubTitle2>
+      <GradiantText>Pónte en contacto</GradiantText>
+      con nosotros
+    </SubTitle2>
+  </Container>
+  <Container
+    className="mx-auto flex flex-col items-center justify-center text-center"
+  >
+    <div class="grid grid-cols-2 sm:grid-cols-2 gap-10 w-full max-w-4xl px-6">
+      <!-- Columna Izquierda - Correo Electrónico -->
+      <a
+        href="mailto:info@equuservice.com"
+        class="text-lg font-semibold text-white hover:text-orange-100 transition"
+      >
+        <div
+          class="flex flex-col items-center bg-gradient-to-r from-primary-300 to-primary-900 p-8 rounded-2xl shadow-lg transform transition duration-500 hover:scale-105"
+        >
+          <h3 class="text-xl font-medium text-white mb-4">
+            Correo Electrónico
+          </h3>
+
+          info@equuservice.com
+        </div>
+      </a>
+
+      <!-- Columna Derecha - Teléfono -->
+      <div
+        class="flex flex-col items-center bg-gradient-to-r from-primary-300 to-primary-900 p-8 rounded-2xl shadow-lg transform transition duration-500 hover:scale-105"
+      >
+        <h3 class="text-xl font-medium text-white mb-4">Teléfono</h3>
+        <p class="text-lg font-semibold text-white">+34 600 010 579</p>
+      </div>
+    </div>
+  </Container>
+</section>
