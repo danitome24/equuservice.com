@@ -12,7 +12,7 @@ export const servicesSectionData = {
   subheading: {
     text1_1: "Un Transporte - ",
     text1_2: "Diseñado para una total comodidad.",
-    text2: "El mejor transporte de caballos de Tarragona.",
+    text2: "El mejor transporte de caballos.",
   },
   services: [
     // {

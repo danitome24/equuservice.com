@@ -24,34 +24,18 @@ const { className } = Astro.props;
       />
     </div>
     <div class="grid grid-col-1 md:grid-cols-3 lg:grid-cols-4 gap-y-2 gap-x-4">
-      <div class="">
-        <ServiceCard
-          title={servicesSectionData.services[0].title}
-          description={servicesSectionData.services[0].briefDescription}
-          visual={servicesSectionData.services[0].visual}
-        />
-      </div>
-      <div class="">
-        <ServiceCard
-          title={servicesSectionData.services[1].title}
-          description={servicesSectionData.services[1].briefDescription}
-          visual={servicesSectionData.services[1].visual}
-        />
-      </div>
-      <div class="">
-        <ServiceCard
-          title={servicesSectionData.services[2].title}
-          description={servicesSectionData.services[2].briefDescription}
-          visual={servicesSectionData.services[2].visual}
-        />
-      </div>
-      <div class="">
-        <ServiceCard
-          title={servicesSectionData.services[3].title}
-          description={servicesSectionData.services[3].briefDescription}
-          visual={servicesSectionData.services[3].visual}
-        />
-      </div>
+      {
+        servicesSectionData.services.map((service) => (
+          <div class="">
+            <ServiceCard
+              title={service.title}
+              description={service.briefDescription}
+              visual={service.visual}
+            />
+            ;
+          </div>
+        ))
+      }
     </div>
   </Container>
 </section>

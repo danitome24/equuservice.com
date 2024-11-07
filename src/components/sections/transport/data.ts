@@ -1,11 +1,11 @@
 import img from "./assets/remolque-equuservice.png";
 
 export const transportSection = {
-  title: "Transporte",
-  subheading1_1: "Transporte",
-  subheading1_2: " Equuservice",
+  title: "Transporte de caballos",
+  subheading1_1: "Transporte ",
+  subheading1_2: " personalizado de caballos",
   description:
-    "Ofrecemos transporte especializado y seguro para caballos en Tarragona y alrededores.",
+    "Ofrecemos transporte especializado y seguro para caballos.",
   impactPoints: [
     {
       title: "Nuestros vehículos:",

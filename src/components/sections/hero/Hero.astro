@@ -6,17 +6,6 @@ import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle from "../../shared/SubTitle.astro";
 import Title from "../../shared/Title.astro";
 
-const heroSection = {
-  headline1: "Servicios de",
-  headline2: "excelencia",
-  headline3: "",
-  headline4: "para tu caballo!",
-  subheading1: "Tu pasión nos mueve...",
-  subheading2: "",
-  subheading3: "",
-  buttonText: "Contáctanos",
-};
-
 export interface Props {
   className?: string;
 }
@@ -31,21 +20,14 @@ const { className = "" } = Astro.props;
     >
       <div class="justify-center flex flex-col text-center md:ml-auto">
         <Title className="">
-          {heroSection.headline1}
-          <GradiantText
-            >{" " + heroSection.headline2}
-            <br />
-            {" " + heroSection.headline3}
-          </GradiantText>{heroSection.headline4}
+          <GradiantText>Transporte de caballos</GradiantText>
         </Title>
         <SubTitle className=" mt-10 leading-9 italic">
-          {heroSection.subheading1}
-          <br />
-          {heroSection.subheading2}<br />
-          {heroSection.subheading3}
+          Ofrecemos transporte de caballos seguro y confiable.
+          Contáctanos para un servicio personalizado y profesional.
         </SubTitle>
         <div class="pt-10 hidden md:block">
-          <CtaButton>{heroSection.buttonText}</CtaButton>
+          <CtaButton>Contáctanos</CtaButton>
         </div>
       </div>
       <div class="hidden md:flex relative pt-10 md:p-0">
