@@ -2,7 +2,7 @@ import svg1 from "./assets/green-1.svg?raw";
 import svg2 from "./assets/green-2.svg?raw";
 import svg3 from "./assets/green-3.svg?raw";
 
-export const getInvolvedSection = {
+export const getPrinciples = {
   title: "Nuestros valores",
   subheading1_1: "Nuestro Compromiso",
   subheading1_2: " Contigo y Tu Caballo",
