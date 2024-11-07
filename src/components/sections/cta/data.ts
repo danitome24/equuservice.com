@@ -1,33 +1,29 @@
 import svg1 from "./assets/green-1.svg?raw";
 import svg2 from "./assets/green-2.svg?raw";
 import svg3 from "./assets/green-3.svg?raw";
-import svg4 from "./assets/green-4.svg?raw";
 
 export const getInvolvedSection = {
-  title: "Get Involved",
-  subheading1_1: "Join Us ",
-  subheading1_2: "in Building a Sustainable Future",
+  title: "Nuestros valores",
+  subheading1_1: "Nuestro Compromiso",
+  subheading1_2: " Contigo y Tu Caballo",
   initiatives: [
     {
-      title: "Community Outreach",
+      title: "Seguridad y Bienestar Garantizado",
       description:
-        "Discover our community initiatives aimed at promoting awareness and education on sustainable living. Join us in creating a positive impact together.",
+        "Nuestra máxima prioridad es la seguridad y el bienestar de cada caballo que transportamos. Nos aseguramos de cumplir con los estándares más altos en cada viaje, utilizando equipos de transporte especializados y personal capacitado para garantizar que tu caballo llegue cómodo y seguro a su destino.",
+      visual: svg1,
+    },
+    {
+      title: "Compromiso con la Puntualidad",
+      description:
+        "Entendemos lo importante que es cumplir con los tiempos acordados, especialmente en el transporte de animales. Por eso, trabajamos con precisión y responsabilidad, asegurándonos de que cada traslado sea puntual y confiable. Puedes contar con nosotros para un servicio sin contratiempos.",
       visual: svg2,
     },
     {
-      title: "Green Events",
+      title: "Atención Personalizada y Cercana",
       description:
-        "Participate in our upcoming green events. From tree-planting drives to eco-friendly workshops, be a part of the movement towards a healthier planet.",
-      visual: svg4,
-    },
-    {
-      title: "Partnerships for Sustainability",
-      description:
-        "Explore our partnerships with organizations dedicated to environmental conservation. Learn how you can contribute to sustainable practices through collaboration.",
+        "Cada caballo es único, y entendemos que cada cliente tiene necesidades diferentes. Nos comprometemos a ofrecer un servicio adaptado a tus requerimientos específicos, con una atención cercana y personalizada. Queremos que confíes en nosotros como un aliado para el cuidado y transporte de tu caballo.",
       visual: svg3,
     },
   ],
-  visual: "get-involved-section-image.jpg",
-  callToAction: "Take Action Today for a Greener Tomorrow",
-  button: "Join Our Initiatives",
 };
