@@ -42,7 +42,7 @@ export const servicesSectionData = {
     {
       title: "Transporte",
       briefDescription:
-        "Disponemos de furgón de 2 caballos, remolque oblicuo de 2 caballos (3 ponis) y remolque oblicuo de 3 caballos (4 ponis).",
+        "Disponemos de furgón de 2 caballos, remolque de 2 caballos y remolque oblicuo de 3 caballos (4 ponis)",
       visual: transportService,
     },
     {
