@@ -3,7 +3,7 @@ import svg2 from "./assets/green-2.svg?raw";
 import svg3 from "./assets/green-3.svg?raw";
 
 export const getPrinciples = {
-  title: "Nuestros valores",
+  title: "¿Por Qué Elegir Equuservice?",
   subheading1_1: "Nuestro Compromiso",
   subheading1_2: " Contigo y Tu Caballo",
   initiatives: [
