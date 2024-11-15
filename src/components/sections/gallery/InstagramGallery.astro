@@ -1,0 +1,19 @@
+---
+import Container from "../../shared/Container.astro";
+import Title2 from "../../shared/Title2.astro";
+import InstagramProfileEmbed from "./InstagramProfileEmbed.astro";
+---
+
+<section id="galeria-de-imagenes">
+  <Container
+    size="wide"
+    className="mx-auto flex flex-col items-center justify-center text-center"
+  >
+    <Title2>Galería de Imagenes</Title2>
+  </Container>
+  <Container>
+    <div class="w-full">
+      <InstagramProfileEmbed link="https://instagram.com/equuservice" />
+    </div>
+  </Container>
+</section>
